@@ -10,6 +10,7 @@ public class Primos {
         int numero = 2;
         int count = 0;
         while (count < qnt) {
+            //se for verdade
             if (Primo(numero)) {
                System.out.println(numero);
                count++;
