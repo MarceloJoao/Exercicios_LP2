@@ -1,10 +1,12 @@
 
-import java.util.Scanner;
 public class Primos {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("digite um valor");
-        int qnt = scanner.nextInt(); //Converte para número a entrada
+        if (args.length < 1) {
+            System.out.println("Você deve passar um parâmetro.");
+            System.exit(0);
+        }
+
+        int qnt = Integer.parseInt(args[0]); //Converte para número a entrada
         int numero = 2;
         int count = 0;
         while (count < qnt) {
